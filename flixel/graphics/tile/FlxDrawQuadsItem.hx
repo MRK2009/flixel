@@ -112,10 +112,7 @@ class FlxDrawQuadsItem extends FlxDrawBaseItem<FlxDrawQuadsItem>
 	#if !flash
 	override public function render(camera:FlxCamera):Void
 	{
-		if (rects.length == 0)
-			return;
-
-		if (shader == null && graphics.bitmap == null)
+		if (rects.length == 0 || graphics == null || graphics.bitmap == null || graphics.key == null)
 			return;
 
 		var shader = shader != null ? shader : graphics.shader;
