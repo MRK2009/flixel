@@ -1,10 +1,10 @@
 package flixel;
 
-import flash.Lib;
-import flash.display.Sprite;
-import flash.display.StageAlign;
-import flash.display.StageScaleMode;
-import flash.events.Event;
+import openfl.Lib;
+import openfl.display.Sprite;
+import openfl.display.StageAlign;
+import openfl.display.StageScaleMode;
+import openfl.events.Event;
 import flixel.graphics.tile.FlxDrawBaseItem;
 import flixel.system.FlxSplash;
 import flixel.util.FlxArrayUtil;
