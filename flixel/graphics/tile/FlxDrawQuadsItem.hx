@@ -115,6 +115,9 @@ class FlxDrawQuadsItem extends FlxDrawBaseItem<FlxDrawQuadsItem>
 		if (rects.length == 0)
 			return;
 
+		if (shader == null && graphics.isDestroyed)
+			return;
+
 		var shader = shader != null ? shader : graphics.shader;
 		shader.bitmap.input = graphics.bitmap;
 		shader.bitmap.filter = (camera.antialiasing || antialiasing) ? LINEAR : NEAREST;
